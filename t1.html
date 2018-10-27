@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+.parent{
+  /* overflow:hidden; */
+  height: 300px;
+}
+
+    .son1{
+        width: 200px;
+        height:100%;
+        float: left;
+        background-color: aqua;
+        /* height: 100px; */
+      }
+      .son2{
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:200px;
+        right: 300px;
+        background-color: palegoldenrod;
+      }
+      .son3{
+        height:100%;
+        width: 300px;
+        float: right;
+        border-color: hotpink;
+      }
+
+      .f2{
+        background-color: yellow;
+        height: 200px;
+      }
+    
+
+      .d1{
+        /* 宽度固定 */
+        width: 100px;
+        height: 50px;
+        background-color:royalblue;
+        margin: auto ;
+      }
+    </style>
+</head>
+<body>
+    <div class="parent clearfix">
+        <div class="son1"></div>
+        <div class="son2">
+          <div class="d1">
+          </div>
+        </div>
+        <div class="son3"></div>
+      </div>
+      <div class="f2"></div>
+      
+     
+</body>
+</html>
